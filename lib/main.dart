@@ -20,6 +20,28 @@ class ImagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      children: [
+        Text('حاول مرة اخرى',
+        style: TextStyle(
+          fontSize: 42.0,
+          color: Colors.white,
+           
+        ),
+        ),
+        Row(
+          children: [
+            Expanded(
+              
+              child: Image.asset('images/image-1.png'),
+            ),
+            Expanded(
+              
+              child: Image.asset('images/image-1.png'),
+            )
+          ],
+        ),
+      ],
+    );
   }
 }
